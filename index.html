@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register - iintoo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f7fc;
+      margin: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .left-side {
+      background: #e8f0fe;
+      padding: 1px;
+      height: 800px;
+      width: 130%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .left-side img {
+      height: 803px;
+      width: 100%;
+      padding: 2px;
+    }
+    .right-side {
+      height: 19px;
+      padding: 100px;
+      width: 100%;
+      color: #2A4A5C;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-left: -30px;
+      color: #2A4A5C;
+    }
+    .social-buttons {
+      display: flex;
+      gap: 23px;
+      margin: 20px 0;
+    }
+    .social-buttons button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 220px;
+      height: 38px;
+      padding: 5px;
+      margin-left: -27px;
+      border: none;
+      background: #4267B2;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .social-buttons button.linkedin {
+      background: #0077B5;
+      margin-left: 20px;
+    }
+    .or-divider {
+      text-align: center;
+      margin: 30px 0;
+      margin-right: 23px;
+      position: relative;
+      font-size: 11px;
+    }
+    .or-divider::before,
+    .or-divider::after {
+      content: '';
+      height: 1px;
+      width: 45%;
+      background: #ccc;
+      position: absolute;
+      top: 50%;
+    }
+    .or-divider::before {
+      left: 90px;
+    }
+    .or-divider::after {
+      right: 90px;
+    }
+    .or-divider span {
+      background: white;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1;
+    }
+    input[type="email"] {
+      width: 40%;
+      padding: 16px;
+      margin-right: -25px;
+      margin-left: -25px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="text"] {
+      width: 40%;
+      padding: 16px;
+      border: 1px solid #ccc;
+      margin-left: 62px;
+      border-radius: 4px;
+    }
+   
+    .investor-type {
+      margin: 40px 0;
+      font-size: 18px;
+      color: #2A4A5C;
+    }
+    .investor-type label {
+      margin-right: 28px;
+    }
+    .checkbox {
+      margin: 12px 0;
+    }
+    .checkbox label {
+      font-size: 11px;
+    }
+    .create-account {
+      width: 43%;
+      padding: 12px;
+      background: #2979ff;
+      color: white;
+      font-size: 1em;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-left: -3px;
+    }
+    .create-account:hover {
+      background: #1565c0;
+    }
+
+    p {
+      margin-left: -27px;
+    }
+
+    .inveestor-type {
+      font-size: 12px;
+    }
+
+    .op {
+      font-size: 12px;
+      margin-left: -30px;
+    }
+
+    .ko {
+      color: gray;
+      text-decoration: none;
+    }
+
+    .hg {
+      color: #0077B5;
+      margin-left: 6px;
+    }
+
+    .yi {
+      margin-top: 40px;
+    }
+
+    .mo {
+      font-size: 16px;
+      margin-top: 45px;
+      margin-left: -50px;
+    }
+
+    label {
+      margin-left: 20px;
+    }
+
+    .ml {
+      margin-right: 30px;
+      width: 18px;
+    }
+
+    .hu {
+      font-size: 11px;
+      color: white;
+      text-decoration: none;
+      margin-right: 38px;
+    }
+
+    .lp {
+      width: 18px;
+      margin-bottom: 2px;
+      margin-right: 25px;
+    }
+
+    .ui {
+      font-size: 11px;
+      margin-right: 38px;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .lr {
+      position: absolute;
+      bottom: 350px;
+      left: 19%;
+      width: 6%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .bo {
+      font-size: 12px;
+      margin-top: 20px;
+      margin-left: -30px;
+    }
+    
+    div#kvadrat_0 {
+
+width: 215px;
+font-size: 12px;
+color: gray;
+height: 42px;
+border: 1px solid #e8f0fe;
+box-shadow: #ccc 0px 0px 5px;
+background-color: white;
+border-radius: 5px;
+margin-left: -25px;
+margin-top: 22px;
+padding: 10px;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="left-side">
+    <img src="img/bg.jpg" alt="Illustration">
+  </div>
+  <img src="img/logo (1).svg" class="lr">
+  <div class="right-side">
+    <h2>Get iintoo it today</h2>
+    <p>There is no charge or obligation upon registration.</p>
+
+    <div class="social-buttons">
+      <button><img src="img/facebook.svg" class="ml"><a href="#" class="hu">Register with Facebook</button></a>
+      <button class="linkedin"><img src="img/linkedin (1).svg" class="lp"><a href="#" class="ui">Register with LinkedIn</button></a>
+    </div>
+
+    <div class="or-divider"><span>OR</span></div>
+
+    <form>                                           
+      <input type="email" placeholder="Email" value="gus.goodwin@gmail.com" required>
+      <input type="text" placeholder="Phone">
+
+      <div class="investor-type">
+        <p>What type of investor are you?</p>
+      <div class="inveestor-type">
+        <p>Select the type of investor you are below.</p>
+      </div>
+      <div class="mo">
+        <label><input type="radio" name="investor" value="individual" checked> Individual</label>
+        <label><input type="radio" name="investor" value="business"> Business</label>
+        <label><input type="radio" name="investor" value="ira"> IRA</label>
+        <label><input type="radio" name="investor" value="trust"> Trust</label>
+      </div>
+      <div id="kvadrat_0">I am a natural person investing on my
+        own behalf as a sole owner, joint tenant,
+        or tenant in common.
+      </div>
+
+      <div class="op">
+        <div class="yi">
+          <a href="#" class="ko">I agree to the terms and receiving notifications from iintoo</a><a href="#" class="hg">View full terms</a>
+        </div>
+
+      <button type="submit" class="create-account">Create Account</button>
+    </form>
+
+</body>
+</html>
